@@ -18,3 +18,14 @@ let com = 'CodeSweetly';
 console.log(firstitle);
 console.log(com);
 
+// Destructuring Array as Parameter 
+const man = ['Oluwatobi', 'Sofela'];
+
+function getUserBio([firstName, lastName]) {
+  return `My name is ${firstName} ${lastName}.`;
+}
+
+console.log(getUserBio(man));
+
+// Destructuring Objects
+
