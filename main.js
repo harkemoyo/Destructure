@@ -29,3 +29,17 @@ console.log(getUserBio(man));
 
 // Destructuring Objects
 
+      // app.js
+// A bunch of our own code, 
+// followed by calling the jQuery library
+let error = false;
+const errorMessage = 'An Error Occurred';
+$('#myButton').on('click', () => {
+  error = true; // pretend some error occurs and set error = true
+  if (error) {
+    $('#app')
+       .append(`<p id="error">${errorMessage}</p>`);
+  } else {
+    $('#error').remove();
+  }
+});
