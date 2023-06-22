@@ -40,6 +40,6 @@ $('#myButton').on('click', () => {
     $('#app')
        .append(`<p id="error">${errorMessage}</p>`);
   } else {
-    $('#error').remove();
+    // $('#error').remove();
   }
 });
