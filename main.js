@@ -27,9 +27,8 @@ function getUserBio([firstName, lastName]) {
 
 console.log(getUserBio(man));
 
-// Destructuring Objects
+// Difference between frameworks and libraries
 
-      // app.js
 // A bunch of our own code, 
 // followed by calling the jQuery library
 let error = false;
@@ -42,4 +41,23 @@ $('#myButton').on('click', () => {
   } else {
     $('#error').remove();
   }
+});
+
+// vue.js framework
+
+const vm = new Vue({
+  template: `<div id="vue-example">
+               <button @click="checkForErrors">Submit</button>
+               <p v-if="error">{{ errorMessage }}</p>
+             </div>`,
+  el: '#vue-example',
+  data: {
+    error: null,
+    errorMessage: 'An Error Occurred',
+  },
+  methods: {
+    checkForErrors()  {
+      this.error = !this.error;
+    },
+  },
 });
