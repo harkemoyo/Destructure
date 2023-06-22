@@ -45,19 +45,19 @@ $('#myButton').on('click', () => {
 
 // vue.js framework
 
-const vm = new Vue({
-  template: `<div id="vue-example">
-               <button @click="checkForErrors">Submit</button>
-               <p v-if="error">{{ errorMessage }}</p>
-             </div>`,
-  el: '#vue-example',
-  data: {
-    error: null,
-    errorMessage: 'An Error Occurred',
-  },
-  methods: {
-    checkForErrors()  {
-      this.error = !this.error;
-    },
-  },
-});
+// const vm = new Vue({
+//   template: `<div id="vue-example">
+//                <button @click="checkForErrors">Submit</button>
+//                <p v-if="error">{{ errorMessage }}</p>
+//              </div>`,
+//   el: '#vue-example',
+//   data: {
+//     error: null,
+//     errorMessage: 'An Error Occurred',
+//   },
+//   methods: {
+//     checkForErrors()  {
+//       this.error = !this.error;
+//     },
+//   },
+// });
